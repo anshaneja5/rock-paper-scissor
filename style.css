@@ -1,0 +1,57 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    /* background: linear-gradient(90deg, rgba(0, 0, 255, 1) 0%, rgba(0, 128, 0, 1) 100%); */
+    background-color: white;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    overflow-x: hidden;
+}
+.heading{
+    text-align: center;
+    margin-top: 1rem;
+    font-size: x-large;
+    cursor: pointer;
+}
+.hands{
+    font-size: xx-large;
+    display: flex;
+    /* width: 200px; */
+    /* flex-direction: column; */
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+.players{
+    font-size: xx-large;
+    display: grid;
+    color: black;
+    text-align: center;
+    grid-template-columns: repeat(2,1fr);
+    justify-content: space-between;
+}
+
+.winner{
+    transform: scale(1.3);
+}
+
+.loser{
+    transform: scale(0.8);
+    opacity: 0.8;
+}
+
+.rock:hover{
+    transform: scale(1.2);
+}
+.paper:hover{
+    transform: scale(1.2);
+}
+.scissor:hover{
+    transform: scale(1.2);
+}
